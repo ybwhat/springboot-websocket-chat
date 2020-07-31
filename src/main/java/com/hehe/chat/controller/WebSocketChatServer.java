@@ -1,6 +1,7 @@
-package com.hehe.chat;
+package com.hehe.chat.controller;
 
 import com.alibaba.fastjson.JSON;
+import com.hehe.chat.pojo.Message;
 import org.springframework.stereotype.Component;
 
 import javax.websocket.*;

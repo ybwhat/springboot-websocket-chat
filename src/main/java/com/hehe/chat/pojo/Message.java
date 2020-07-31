@@ -1,4 +1,4 @@
-package com.hehe.chat;
+package com.hehe.chat.pojo;
 
 import com.alibaba.fastjson.JSON;
 

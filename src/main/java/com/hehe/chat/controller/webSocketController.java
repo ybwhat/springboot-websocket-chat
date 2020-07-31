@@ -1,7 +1,5 @@
-package com.hehe.chat;
+package com.hehe.chat.controller;
 
-import com.hehe.error.DefinitionException;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
@@ -13,9 +11,6 @@ import java.net.UnknownHostException;
 
 @RestController
 public class webSocketController {
-
-/*    @Autowired
-    private WebSocketChatServer webSocketChatServer;*/
 
 
     /**
