@@ -18,7 +18,7 @@ public class webSocketController {
      */
     @GetMapping("/")
     public ModelAndView login() {
-        return new ModelAndView("/login");
+        return new ModelAndView("login");
     }
 
     /**
@@ -32,7 +32,7 @@ public class webSocketController {
 /*        if (webSocketChatServer.getUser(username)) {
             throw new DefinitionException(400,"用户名已存在");
         }*/
-        ModelAndView mav = new ModelAndView("/chat");
+        ModelAndView mav = new ModelAndView("chat");
         mav.addObject("username", username);
         mav.addObject("webSocketUrl", "ws://" + InetAddress.getLocalHost().getHostAddress() + ":" + request.getServerPort() + request.getContextPath() + "/chat" + "/" + username);
         return mav;
