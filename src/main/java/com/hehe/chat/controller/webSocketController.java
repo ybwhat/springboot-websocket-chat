@@ -34,7 +34,7 @@ public class webSocketController {
         }*/
         ModelAndView mav = new ModelAndView("chat");
         mav.addObject("username", username);
-        mav.addObject("webSocketUrl", "ws://" + InetAddress.getLocalHost().getHostAddress() + ":" + request.getServerPort() + request.getContextPath() + "/chat" + "/" + username);
+        mav.addObject("webSocketUrl", "ws://120.53.22.225" + ":" + request.getServerPort() + request.getContextPath() + "/chat" + "/" + username);
         return mav;
     }
 
